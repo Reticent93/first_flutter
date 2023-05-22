@@ -14,8 +14,13 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.purple[600],
       ),
       body: Center(
-        child: Image.asset('assets/mtn1.jpg'),
-      ),
+          child: IconButton(
+        onPressed: () => {
+          print('object'),
+        },
+        icon: const Icon(Icons.alternate_email),
+        color: Colors.amber,
+      )),
       floatingActionButton: FloatingActionButton(
         onPressed: () => {},
         backgroundColor: Colors.purple[600],
